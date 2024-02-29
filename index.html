@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIRAN MALLA PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bbc3e12b3b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.jpeg">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/website_logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>SOFTWARE DEVELOPER</p>
+            <h1>
+                Hi, My name is <span> Kiran Malla </span>. <br> I'm from <span>Nepal </span> and<br> 
+                I'm passionate about <span>Tech </span>.
+            </h1>
+        </div>
+    </div>
+</div>
+
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="images/kiran_malla.jpg">
+            </div>
+            <div class="about-column-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Kiran Malla. A high-school graduate who is passionate about technology and its 
+                    implication in our life. I believe that technology should be flawlessly integrated into 
+                    our lives to make our lives more easy and convinent. Technology can also
+                    help humanity solve some of the world most stressing problems. I wish to be an tech entreprenuer
+                    and built upon to solve world most suppresing problmes through the tech. <br> <br>
+                    Beside it, I also enjoy multiple hobby such as Football(soccer),  
+                    Drawing/Sketching, 3d animation, Table Tennis and lot more. I am always on lookout to try new things.
+                </p>
+
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                </div>
+
+                <!--Skills-->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>I can program in multiple programming languages such as C, Python, HTML, CSS and JavaScript</li>
+                        <li><span>3D Animation</span><br>I can use 3D software Blender to make 3D models, characters and enviroment for video games, VR applicaton and 3D animation.</li>
+                        <li><span>All RANDOM</span><br>I am good at Football(Soccer) and T.T. Can communicate effectively. Leadership Skills </li>
+                   </ul>
+                </div>
+
+                <!--Experience-->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Student</span><br>Been a student since 2007 and still continuing....</li>
+                        <li><span>Web Development</span><br>Built the frontend for several websites.</li>
+                        <li><span>3D Animation</span><br>Built many 3D models, assets and Enviroment</li>
+                    </ul>
+                </div>
+
+                <!--Education-->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Primary and Secondary School</span><br>S.S.S.S (2012-2021)</li>
+                        <li><span>High School</span><br>Trinity International College(2021-2023)</li>
+                        <li><span>Bachelor in Computer Science</span><br>_________ University(2024-20XX)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Dev</h2>
+                <p>
+                    I can built frontend for Website with programming languages like HTML, CSS and JS.
+                    I can help you to digitalize your business and reach possible online customers.
+                </p>
+                <a href="#portfolio">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Software Development</h2>
+                <p>
+                    Right Now, I do not offer Software Devlopment as Service. Please check back in the future or contact me for more information.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <!--<i class="fa-solid fa-shuffle"></i>-->
+                <i class="fa-solid fa-cube"></i>
+                <h2>3D Models and Assets</h2>
+                <p>
+                    I use Blender as my main 3D software to create models, assets and envieoment for games, VR appliaction and 3D animation.
+                </p>
+                <a href="#portfolio">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/blender_render.jpg">
+                <div class="layer">
+                    <h3>3D Animation</h3>
+                    <p>
+                        I am a 3D Animator who can create amazing character,models and enviroment for video games.
+                        I work in Blender 3D Software. <br> Click following link to some of my works.
+                    </p>
+                    <a href="https://imgur.com/a/zymr6eq" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/web_dev.jpeg">
+                <div class="layer">
+                    <h3>Web Dev</h3>
+                    <p>
+                        I develop frontend web application using HTML, CSS and JavaScript.<br>
+                        Click following link to some of my works.
+                    </p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/arts.gif">
+                <div class="layer">
+                    <h3>Arts(Sketch)</h3>
+                    <p>
+                        I love to Draw/Sketch and Doodle. I mainly Sketch character from Anime and Manga.
+                        <br> Click link below to view some of my work.
+                    </p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button">See More</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> menghga@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 97428783__</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kiran.malla.1069" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/kmismeng" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kmsmeng/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kiran-malla-8a8b2a227/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="ronaldo.pdf" download class="button button2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Kiran. Made by Kiran Malla</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwU1ZxD1JWcBEMXoENcDktWk5eYp4v9FO0rHVZOgFRZPwFdIsJXdoGCYHm8tgfi0hYo/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById('message')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                message.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
