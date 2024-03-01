@@ -396,6 +396,12 @@ nav .fa-solid{
     }
 }
 
+@media only screen and (max-width: 1100px){
+    #header{
+        background-image: none;
+    }
+}
+
 #message{
     color: #61b752;
     margin-top: -40px;
