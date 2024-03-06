@@ -408,6 +408,15 @@ nav .fa-solid{
     display: block;
 }
 
+/*scroll bar*/
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #000000;
+    border-radius: 10px;
+}
 
 
 
