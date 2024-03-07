@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search City...">
+            <button>
+                <img src="images/search.png">
+            </button>
+        </div>
+
+        <div class="error">Invalid City Name. e.g: Try 'London'</div>
+
+        <div class="body-container">
+            <div class="location">
+                <h1 class="city-and-country"><span class="city">Kathmandu</span>, <span class="country">NP</span></h1>
+                <h3>
+                    <span class="month"></span>
+                    <span class="day"></span>,
+                    <span class="year"></span>
+                    
+                </h3>
+                <img src="images/cloud.png" class="weather-icon">
+                <h2 class="main-weather">
+                    Cloudy 
+                </h2>
+            </div>
+
+            <div class="temperature-section">
+                <img src="images/temperature.png">
+                <h1 class="temperature">19°C</h1>
+            </div>
+        </div>
+
+        <div class="end-body">
+            <div class="column">
+                <img src="images/humidity.png">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="images/wind.png">
+                <div>
+                    <p class="wind">5 km/hr</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="images/visibility.png">
+                <div>
+                    <p class="visibility">10000m / 10km</p>
+                    <p>Visibility</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

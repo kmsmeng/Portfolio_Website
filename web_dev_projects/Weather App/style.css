@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    background-color: transparent; 
+}
+
+.container{
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    
+    margin: 30px auto;
+    
+    width: 90%;
+    max-width: 900px;
+    
+
+    border: 3px solid rgba(58, 68, 63, 0.18);
+    box-shadow: 0 8px 32px 0  black; 
+
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+}
+
+/*search*/
+.search{
+    padding: 0 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    height: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    margin-left: auto;
+    padding:  10px 25px;
+    flex: 1;
+}
+.search button{
+
+    border: 0;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.search button img{
+    margin-right: 25px;
+    width: 35px;
+    transition: 0.3s;
+}
+.search button img:hover{
+    transform: scale(1.15);
+}
+
+/*mid-body*/
+.body-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    margin-top: 20px;  
+}
+.location{
+    width: 40%;
+}
+.location img{
+    margin-top: 15px;
+    height: 180px;
+}
+.temperature-section{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 50px;
+}
+.temperature-section img{
+    width: 120px;
+}
+.temperature{
+    font-size: 120px;
+    font-weight: 100;
+    margin-left: 0px;
+}
+
+/*bottom-body*/
+.end-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+
+    
+
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    backdrop-filter: blur(30px); /* Blur effect */
+}
+.column{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.column img{
+    width: 70px;
+    margin-right: 10px;
+}
+.humidity, .wind, .visibility{
+    font-size: 18px;
+    margin-top: -12px;
+}
+
+
+
+.body-container, .end-body{
+    display: none;
+}
+
+.error{
+    display: none;
+    margin-top: 10px;
+    margin-left: 8%;
+    color: rgb(28, 1, 1);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(32, 31, 31);
+    border-radius: 20px;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .search{
+        padding: 0 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    .body-container{
+        padding: 20px 40px;
+        display: flex;  
+    }
+    .city-and-country{
+        font-size: 22px;
+    }
+    .body-container h3{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .location img{
+        height: 100px;
+    }
+    .main-weather{
+        font-size: 18px;
+    }
+    .temperature-section img{
+        height: 90px;
+        width: 100px;
+    }
+    .temperature{
+        font-size: 60px;
+    }
+}
