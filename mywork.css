@@ -20,11 +20,8 @@
 .work-list div h2{
     font-size: 30px;
     margin-bottom: 15px;
-    /*
-    color:#b54769;  
-    or
+   
     color: #ff004f;
-    */
 }
 
 .work-list div a{
@@ -34,6 +31,12 @@
     margin-top: 25px;
     display: inline-block;
 
+    /*background-color: rgb(40, 213, 106);*/
+    background-color: rgb(9, 144, 60);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    
     position: absolute; /* Positioned absolutely within the parent div */
     bottom: 20px; /* Placed 10px from the bottom */
     left: 40px; /* Placed 10px from the right */
@@ -42,4 +45,7 @@
 .work-list div:hover{
     background: #ff004f /*#ff004f*/;
     transform: translateY(-5px);
+}
+.work-list div:hover h2{
+    color: #ffffff;
 }
