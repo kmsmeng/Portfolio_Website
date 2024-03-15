@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:  #191818;
+    color: rgb(255, 255, 255);
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    margin: 50px 90px;
+    text-align: center;
+    
+}
+.info h1{
+    font-size: 55px;
+    margin-top: 0px;
+}
+.info p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.timer{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    text-align: center;
+ 
+}
+.timer div{
+    margin-left: 35px;
+    
+    
+}
+.timer div h1{
+    margin-bottom: 20px;
+    background-color: rgb(209, 21, 21);
+    border-radius: 10px;
+    width: 100px;
+    font-size: 80px;
+    text-align: center;
+}
+.timer div p{
+    font-size: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.button button{
+    border: 0;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(121, 2, 2);
+    color: white;
+}
+        
+
+/*CSS for popup*/
+#popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    
+    display: none;
+}
+#popup-content{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: #191818;
+    
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+       
+}
+#popup-content h1{
+    margin: auto;
+    width: 100%;
+}
+#popup-content{
+    /* opacity: ; */
+    z-index: 1;
+}
+#popup-content img{
+    width: 100%;
+    height: 70%;
+}
+
+/*CSS for popup scrollbar*/ 
+#popup-content::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+#popup-content::-webkit-scrollbar-thumb{
+    background-color: #000000;
+    border-radius: 20px;
+}

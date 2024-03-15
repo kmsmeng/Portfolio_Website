@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="info">
+        <h1>COMING SOON</h1>
+        <p>WE HAVE A PROJECT LAUNCHING SOON
+            <br> <br><span style="color: rgb(225, 221, 16);">June 22, 2024</span> 
+        </p>
+    </div>
+
+    <div class="timer">
+        <div class="days">
+            <h1 id="days">00</h1>
+            <p>Days</p>
+        </div>
+        <div class="hours">
+            <h1 id="hours">00</h1>
+            <p>Hours</p>
+        </div>
+        <div class="minutes">
+            <h1 id="minutes">00</h1>
+            <p>Minutes</p>
+        </div>
+        <div class="seconds">
+            <h1 id="seconds">00</h1>
+            <p>Seconds</p>
+        </div>
+    </div>
+
+    <!--
+
+    <div class="button">
+        <button id="open-popup">Learn More</button>
+    </div>
+    <div id="popup">
+        <div id="popup-content">
+            <img src="amazon.png" >
+            <h1>content NO 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Esse nam placeat enim sint nesciunt porro laudantium, cum alias 
+                eum natus suscipit ipsa consectetur quod amet error molestias dolorem 
+                dignissimos fugit?Fuga amet deleniti atque enim beatae
+                accusamus nostrum, numquam odit quidem, necessitatibus minus 
+                dolorum rerum? Totam quis nobis suscipit aspernatur. Cupiditate 
+                iure nobis ut est dolorem corporis, facilis et itaque.
+                Accusamus nulla sunt inventore nesciunt distinctio! Delectus ex
+                possimus reiciendis qui nostrum magnam tenetur fugiat laborum at 
+                adipisci culpa deleniti similique ea sit a dolorum quaerat itaque 
+                saepe, pariatur error.
+            </p>
+        </div>
+
+    </div>
+
+    -->
+
+
+
+    
+    <script>
+        /*
+        function openPopup(popupNumber, popupButtonNo){
+
+            const popup = document.getElementById(popupNumber);
+            const popupOverlay = document.getElementById(popupNumber);
+            const openPopupButton = document.getElementById(popupButtonNo);
+
+            openPopupButton.addEventListener('click', () => {
+                popup.style.display = 'block';
+            });
+        
+            window.addEventListener('click', (event) => {
+                if (event.target === popup) {
+                    popup.style.display = 'none';
+                }
+            })
+        }
+        */
+
+
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popup');
+        const openPopupButton = document.getElementById('open-popup');
+            
+        openPopupButton.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+        
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+        
+
+    </script>
+        
+
+
+    <script>
+        var CountdownDate = new Date('June 22, 2024 00:00:00').getTime();
+
+        var x = setInterval(() => {
+            var currentTime = new Date().getTime();
+            var timeLeft = CountdownDate - currentTime;
+
+            var days = timeLeft / (1000 * 60 * 60 * 24);
+            document.querySelector('#days').innerHTML = Math.floor(days);
+ 
+            var hours =  (timeLeft / (1000 * 60 * 60)) % 24  ;
+            document.querySelector('#hours').innerHTML = Math.floor(hours);
+ 
+            var minutes = timeLeft / (1000 * 60 ) % 60;
+            document.querySelector('#minutes').innerHTML = Math.floor(minutes);
+ 
+            var seconds = timeLeft / (1000) % 60;
+            document.querySelector('#seconds').innerHTML = Math.floor(seconds);
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
