@@ -13,7 +13,7 @@ body{
 } 
 #header{
     width: 100%;
-    height: 100vh;
+    height: auto;
     /*here we have broken the main background image a
     little bit later add image according to your liking*/
     background-image: url(images/hero_image.jpeg);
@@ -340,6 +340,12 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 700px){
+    * {
+        box-sizing: border-box;
+    }    
+    body{
+        overflow-x: hidden;
+    }
     #header{
         /*here put main background image for the mobile size*/
         background-image: url(/*kiran_malla.jpg*/);
