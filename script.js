@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const initial = (location.hash || '').replace('#/', '');
-  const valid = ['about', 'work', 'research', 'contact'];
+  const valid = ['about', 'work', 'research', 'interests', 'resume', 'contact'];
   showView(valid.includes(initial) ? initial : 'about');
 
 });

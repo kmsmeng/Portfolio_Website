@@ -21,6 +21,8 @@
       <button class="path active" data-nav="about">/about</button>
       <button class="path" data-nav="work">/work</button>
       <button class="path" data-nav="research">/research</button>
+      <button class="path" data-nav="interests">/interests</button>
+      <button class="path" data-nav="resume">/resume</button>
       <button class="path" data-nav="contact">/contact</button>
     </nav>
   </header>
@@ -31,6 +33,7 @@
     <h1>I build systems that learn from data,<br/>with a focus on medicine.</h1>
 
     <div class="about-photo-slot">
+      <!-- PHOTO PLACEHOLDER: add YOUR_PHOTO.jpg to this folder to replace this box -->
       <img src="kiranmalla.jpg" alt="Kiran Malla" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
       <span class="photo-fallback">kiranmalla.jpg</span>
     </div>
@@ -41,9 +44,9 @@
 
     <dl class="facts">
       <div><dt>Based in</dt><dd>Hattiesburg, MS</dd></div>
-      <div><dt>Studying</dt><dd>B.S. Computer Science / Pre-Med, USM — exp. Dec 2028</dd></div>
+      <div><dt>Studying</dt><dd>B.S. Computer Science / Biology, USM - exp. Dec 2028</dd></div>
       <div><dt>Currently</dt><dd>Research Assistant, Dr. Rijal's Lab</dd></div>
-      <div><dt>Stack</dt><dd>Python · PyTorch · YOLOv8 · OpenCV · React Native</dd></div>
+      <div><dt>Stack</dt><dd>Python - PyTorch - React Native</dd></div>
     </dl>
   </main>
 
@@ -55,6 +58,10 @@
     <ol class="entries">
 
       <li class="entry">
+        <div class="entry-image">
+          <img src="pneumonia-detection.png" alt="Pneumonia Detection & Localization System" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/pneumonia-detection.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>Pneumonia Detection &amp; Localization System</h2>
           <span class="entry-meta">2025</span>
@@ -72,6 +79,10 @@
       </li>
 
       <li class="entry">
+        <div class="entry-image">
+          <img src="images/yolov1-scratch.jpg" alt="YOLOv1 implemented from scratch" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/yolov1-scratch.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>YOLOv1, implemented from scratch</h2>
           <span class="entry-meta">2025</span>
@@ -88,6 +99,10 @@
       </li>
 
       <li class="entry">
+        <div class="entry-image">
+          <img src="images/autoencoders-vae.jpg" alt="Unsupervised feature learning with autoencoders and VAEs" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/autoencoders-vae.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>Unsupervised feature learning with autoencoders &amp; VAEs</h2>
           <span class="entry-meta">2024</span>
@@ -104,6 +119,10 @@
       </li>
 
       <li class="entry">
+        <div class="entry-image">
+          <img src="images/food-classification.jpg" alt="Food image classification with CNNs" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/food-classification.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>Food image classification with CNNs</h2>
           <span class="entry-meta">2024</span>
@@ -119,6 +138,10 @@
       </li>
 
       <li class="entry">
+        <div class="entry-image">
+          <img src="images/camp-crunch.jpg" alt="Camp Crunch nutrition app" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/camp-crunch.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>Camp Crunch — personalized student nutrition app</h2>
           <span class="entry-meta">2025 — present</span>
@@ -138,11 +161,15 @@
 
   <!-- RESEARCH -->
   <main class="view" id="view-research">
-    <p class="kicker">Research &amp; interests</p>
+    <p class="kicker">Research</p>
     <h1>Research</h1>
 
     <ol class="entries">
       <li class="entry">
+        <div class="entry-image">
+          <img src="images/tb-peptide-research.jpg" alt="TB peptide inhibitor research" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/tb-peptide-research.jpg</span>
+        </div>
         <div class="entry-head">
           <h2>Computational design &amp; identification of peptide inhibitors targeting secreted virulence proteins of M. tuberculosis</h2>
           <span class="entry-meta">2026 — in progress</span>
@@ -155,21 +182,61 @@
         </p>
       </li>
     </ol>
+  </main>
 
-    <p class="kicker section-divider">Outside the lab</p>
+  <!-- INTERESTS -->
+  <main class="view" id="view-interests">
+    <p class="kicker">Outside the lab</p>
+    <h1>Interests</h1>
 
-    <div class="interests">
-      <div class="interest">
-        <h3>Sketching</h3>
-        <p>Mostly pencil work, done for no reason other than that it's good for the part of my brain that ML doesn't use.</p>
+    <ol class="entries">
+      <li class="entry">
+        <div class="entry-image">
+          <img src="images/sketching.jpg" alt="Sketching" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/sketching.jpg</span>
+        </div>
+        <div class="entry-head">
+          <h2>Sketching</h2>
+        </div>
+        <p>
+          Mostly pencil work, done for no reason other than that it's good for
+          the part of my brain that ML doesn't use.
+        </p>
         <a href="PLACEHOLDER_ART_LINK" class="entry-link" target="_blank" rel="noopener">View sketches →</a>
-      </div>
-      <div class="interest">
-        <h3>Sports</h3>
-        <p>Played competitively growing up — most of what I know about discipline and teamwork started there.</p>
+      </li>
+
+      <li class="entry">
+        <div class="entry-image">
+          <img src="images/sports.jpg" alt="Sports" onerror="this.style.display='none'; this.parentElement.classList.add('empty');" />
+          <span class="img-fallback">images/sports.jpg</span>
+        </div>
+        <div class="entry-head">
+          <h2>Sports</h2>
+        </div>
+        <p>
+          Played competitively growing up — most of what I know about
+          discipline and teamwork started there.
+        </p>
         <a href="PLACEHOLDER_SPORTS_LINK" class="entry-link" target="_blank" rel="noopener">View photos →</a>
-      </div>
+      </li>
+    </ol>
+  </main>
+
+  <!-- RESUME -->
+  <main class="view" id="view-resume">
+    <p class="kicker">Curriculum vitae</p>
+    <h1>Resume</h1>
+
+    <div class="resume-viewer">
+      <object data="resume.pdf#view=FitH" type="application/pdf" class="resume-embed">
+        <div class="resume-fallback">
+          <p>Your PDF viewer didn't load.</p>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="entry-link">Open resume.pdf directly →</a>
+        </div>
+      </object>
     </div>
+
+    <a href="resume.pdf" download class="entry-link resume-download">Download PDF →</a>
   </main>
 
   <!-- CONTACT -->
@@ -185,14 +252,14 @@
       <li><a href="mailto:kiranmugu@gmail.com">kiranmugu@gmail.com</a></li>
       <li><a href="https://github.com/kmsmeng" target="_blank" rel="noopener">github.com/kmsmeng</a></li>
       <li><a href="https://linkedin.com/in/kiranmalla7" target="_blank" rel="noopener">linkedin.com/in/kiranmalla7</a></li>
-      <li><a href="https://kiranmalla.com.np" target="_blank" rel="noopener">kiranmalla.com.np</a></li>
-      <li><a href="YOUR_RESUME_URL_OR_PATH" target="_blank" rel="noopener">Download CV</a></li>
+      <!-- <li><a href="https://kiranmalla.com.np" target="_blank" rel="noopener">kiranmalla.com.np</a></li> -->
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Download CV</a></li>
     </ul>
   </main>
 
-  <footer class="foot">
+  <!-- <footer class="foot">
     <span>© <span id="year"></span> Kiran Malla</span>
-  </footer>
+  </footer> -->
 
 </div>
 
